@@ -5,13 +5,13 @@ pipeline {
   
     stage('Build') {
       steps {
-        echo 'Building ${env.BUILD_ID} on ${env.JENKINS_URL}'
+        echo "Building ${env.BUILD_ID} on ${env.JENKINS_URL}"
       }
     }
     
     stage('Test') {
       steps {
-        echo 'Testing ${env.BUILD_ID} on ${env.JENKINS_URL}'
+        echo "Testing ${env.BUILD_ID} on ${env.JENKINS_URL}"
       }
     }
     
@@ -22,7 +22,7 @@ pipeline {
         }
       }
       steps {
-        echo 'Deploying ${env.BUILD_ID} on ${env.JENKINS_URL}'
+        echo "Deploying ${env.BUILD_ID} on ${env.JENKINS_URL}"
       }
     }
   }
